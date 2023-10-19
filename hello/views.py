@@ -2,11 +2,23 @@ from django.shortcuts import render
 
 from .models import Greeting
 
-# Create your views here.
-
-
 def index(request):
-    return render(request, "index.html")
+     return render(request, 'index.html')
+
+def cronograma1(request):
+     return render(request, 'cronograma1.html')
+
+def cronograma2(request):
+     return render(request, 'cronograma2.html')
+
+def materiais(request):
+     return render(request, 'materiais.html')
+
+def relatorios(request):
+     return render(request, 'relatorios.html')
+
+def dashboard(request):
+     return render(request, 'dashboard.html')
 
 
 def db(request):

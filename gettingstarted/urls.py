@@ -20,8 +20,15 @@ from django.urls import path
 import hello.views
 
 urlpatterns = [
-    path("", hello.views.index, name="index"),
-    path("db/", hello.views.db, name="db"),
+    path("",            hello.views.index      ,name="index"),
+    path('cronograma1/',hello.views.cronograma1,name='cronograma1'),
+    path('cronograma2/',hello.views.cronograma2,name='cronograma2'),
+    path('materiais/',  hello.views.materiais,  name='materiais'),
+    path('relatorios/', hello.views.relatorios, name='relatorios'),
+    path('dashboard/',  hello.views.dashboard,  name='dashboard'),
+    path('login/',      hello.views.index,  name='index'),
+    path("db/",         hello.views.db,         name="db"),
+    
     # Uncomment this and the entry in `INSTALLED_APPS` if you wish to use the Django admin feature:
     # https://docs.djangoproject.com/en/4.2/ref/contrib/admin/
     # path("admin/", admin.site.urls),

@@ -1,58 +1,180 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="pt-br">
 {% load static %}
+<html>
+	<head>
+		<title>Costurando o Futuro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static  "assets/css/main.css"  %}"/>
+	</head>
+	<body class="is-preload">
 
-{% block content %}
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="{% static 'lang-logo.png'%}">
-    </a>
-    <h1>Getting Started with Python on Heroku</h1>
-    <p>This is a sample Python application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-python"><span class="glyphicon glyphicon-flash"></span> Getting Started with Python</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/python-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-python" class="alert-link">Getting Started with Python on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/python-getting-started">Heroku Button</a> on the repository.</li>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
 
-        <li>When Heroku received the source code, it fetched all the dependencies in <a href="https://github.com/heroku/python-getting-started/blob/main/requirements.txt">requirements.txt</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/python-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd python-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-python#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul>
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started with Python on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/django-app-configuration">Configuring Django Apps for Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
-</div>
-{% endblock %}
+							<!-- Header -->
+								<header id="header">
+									<a href="index/" class="logo"><strong> Michelle Ribeiro & </strong> Davi Marques</a>
+									<ul class="icons">
+										<li><a href="https://www.instagram.com/michellelimaribeiro/" 
+											class="icon brands fa-instagram" target="_blank"> <span class="label">Instagram</span></a></li>
+										<li><a href="https://www.instagram.com/davir.marques/" class="icon brands fa-instagram" target="_blank">
+											<span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1> Seja bem-vindo ao espaço de colaboração
+                                                <br />
+											 </h1>
+											<p>Costurando pontes entre gestão, colabores e multiplicadores</p>
+										</header>
+										<p>Através de nossa aplicação WEB será possível uma comunicação mais eficiente
+                                            
+                                             e dinâmica
+                                            .</p>
+										<ul class="actions">
+											<li><a href="#" class="button big">Mais sobre o Projeto</a></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="{% static  "images/pic10.jpg" %}" />
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Multiplicadores</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon fa-gem"></span>
+											<div class="content">
+												<h3>Cronograma</h3>
+												<p>Acompanhe o cronograma de trabalho
+                                                    .</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-paper-plane"></span>
+											<div class="content">
+												<h3>Materiais</h3>
+												<p>Acompanhe o material de trabalho
+                                                    .</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-rocket"></span><div class="content">
+												<h3>Relatórios</h3>
+												<p>Realize o upload dos relatórios com fotos
+                                                    .</p>
+											</div>
+										</article>
+										<article>
+											<a href="dashboard.html" class="image"><img src="images/dashboard_fundo.png" alt="" /></a>
+											<div class="content"><a href="dashboard.html"><h3>                Dashboard</h3></a>
+												<p>                     Acompanhe as entregas dos colaboradores
+                                                    .</p>
+											</div>
+										</article>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Atualizações</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image">
+												<img src="{% static  "images/pic01.jpg" %}" alt="" />
+											</a>
+
+											<h3>Atualização 1</h3>
+											<p>Aqui constará o conteúdo da atualização 1
+											</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										
+										<article>
+											<a href="#" class="image">
+												<img src="{% static  "images/pic03.jpg" %}" alt="" />
+											</a>	
+												
+											<h3>Atualização 2</h3>
+											<p>
+												Aqui constará o conteúdo da atualização 2
+											</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image">
+												<img src="{% static  "images/pic04.jpg" %}" alt="" />
+											</a>
+											<h3>Atualização 3</h3>
+											<p>
+												Aqui constará o conteúdo da atualização 3
+											</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+							<!-- Menu -->
+								<nav id="MENU">
+									<header class="major">	
+										<h2>Índice</h2>
+									</header>
+									<ul>
+										<li><a href="/">Início</a></li>
+										<li> <a href="/cronograma1/"> Cronograma 1 |   Grupo 1 </a> </li>
+										<li> <a href="/cronograma2/">Cronograma  2 |   Grupo 2 </a> </li>
+										<li><a href="/materiais/">Materiais</a></li>
+										<li><a href="/relatorios/">Relatorios</a></li>
+										<li><a href="/dashboard/">Dashboard</a></li>
+										<li><a href="/login/">Login</a></li>
+									</ul>
+								</nav>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p>Desenvolvido por <a href="https://github.com/davirmarques" target="_blank">Davi Marques</a></p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static "assets/js/jquery.min.js"      %}" ></script>
+			<script src="{% static "assets/js/browser.min.js"     %}"></script>
+			<script src="{% static "assets/js/breakpoints.min.js" %}"></script>
+			<script src="{% static "assets/js/util.js"            %}"></script>
+			<script src="{% static "assets/js/main.js"            %}"></script>
+
+	</body>
+</html> 
