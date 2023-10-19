@@ -1,5 +1,5 @@
 """
-WSGI config for ctf project.
+WSGI config for gettingstarted project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ctf.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gettingstarted.settings")
 
 application = get_wsgi_application()
